@@ -3,6 +3,7 @@
 Test on ESP32, ESP32C3
 
 ```config
+;ESP32C3
 [env:seeed_xiao_esp32c3]
 platform = espressif32
 board = seeed_xiao_esp32c3
@@ -11,6 +12,7 @@ board_microros_transport = serial
 lib_deps = 
 	https://github.com/micro-ROS/micro_ros_platformio
 
+;ESP32
 [env:esp32dev]
 platform = espressif32
 board = esp32dev
@@ -18,6 +20,14 @@ framework = arduino
 board_microros_transport = serial
 lib_deps = 
   https://github.com/micro-ROS/micro_ros_platformio
+
+;SAM D21
+[env:seeed_xiao]
+platform = atmelsam
+board = seeed_xiao
+framework = arduino
+lib_deps = 
+	https://github.com/micro-ROS/micro_ros_platformio
 ```
 
 ## Docker run ROS-Agent
